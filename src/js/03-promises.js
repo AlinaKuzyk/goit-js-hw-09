@@ -1,8 +1,11 @@
-function createPromise(position, delay) {
-  const shouldResolve = Math.random() > 0.3;
-  if (shouldResolve) {
-    // Fulfill
-  } else {
-    // Reject
-  }
+const formEl = document.querySelector('.form');
+const btnFormEl = document.querySelector('button');
+console.log('asd');
+
+function handleFormSubmit(ev) {
+  ev.preventDefault();
+  const dataForm = ev.target.elements;
+  console.log(dataForm);
 }
+
+btnFormEl.addEventListener('submit', handleFormSubmit);
